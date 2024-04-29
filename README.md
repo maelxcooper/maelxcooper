@@ -1,4 +1,4 @@
-# [![Hi 👋, I'm Prince Caballes](/assets/batman.svg)](https://maelxcooper.netlify.app/)
+# [![Hi 👋, I'm Prince Caballes](/assets/batmanwallpaper.svg)](https://maelxcooper.netlify.app/)
 
 ### About me
 
