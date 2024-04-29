@@ -2,7 +2,7 @@
 
 ### About me
 
-Hey there! I'm Prince Caballes 👋, an entry-level Front-End Developer passionate about coding layouts and responsive designs. I love turning static designs into dynamic, user-friendly websites that look great on any device. With a focus on HTML, CSS, and JavaScript, I'm eager to contribute to innovative projects and grow alongside a collaborative team. Let's bring digital visions to life together!
+Hey there! I'm Prince Caballes 👋, an entry-level Front-End Developer with a passion for coding layouts and responsive designs. Currently sharpening my skills in HTML, CSS, and JavaScript, I'm gearing up to delve into React.js and Tailwind CSS. I'm excited about the opportunities to learn and grow with these technologies and eager to contribute to projects that utilize them. If you're looking for someone ready to learn React and Tailwind, count me in. Let's collaborate and build something awesome together!
 
 
 
