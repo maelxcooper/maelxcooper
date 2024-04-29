@@ -104,5 +104,23 @@
     .wrapper {
       padding: 0 20px;
     }
-    
+    .hdr-con {
+      padding: 0 20px;
+    }
+    .sidebar-socials {
+      display: none;
+    }
+    .wave {
+      margin-left: -60em;
+      margin-top: -15em;
+    }
+    .wave-r {
+      margin-left: 48em;
+    }
+
+
+    .btn-con {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
   }
