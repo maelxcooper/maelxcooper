@@ -358,8 +358,8 @@ padding: 0px;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    height: 70vh;
-    min-height: 70vh;
+    height: 80vh;
+    min-height: 80vh;
 }
 
 .hero_info  .h_nm, .p_if {
