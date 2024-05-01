@@ -56,11 +56,10 @@ section {
 }
 body {
  font-family: var(--Font);
- width: 100vw;
+ width: 100%;
  overflow: hidden;
  overflow-y: auto;
  transition: background-color 0.3s ease;
- 
 }
 
 main {
