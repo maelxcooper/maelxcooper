@@ -6,7 +6,7 @@ Hey there! I'm Prince Caballes 👋, an entry-level Front-End Developer with a p
 
 
 
-Temporary Portfolio: https://maelxcooper.netlify.app/
+Temporary Portfolio: https://princecaballes.netlify.app/
 
 
 ### Contacts
