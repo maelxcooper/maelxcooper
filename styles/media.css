@@ -94,14 +94,14 @@
   }
 
   @media (max-width: 800px) {
-    .wrapper {
-      padding: 0 60;
+    main {
+      padding: 0 60px;
     }
     
   }
 
   @media (max-width: 600px) {
-    .wrapper {
+    main {
       padding: 0 20px;
     }
     .hdr-con {
@@ -116,7 +116,7 @@
     }
 
 
-    .btn-con {
+    .btn_con {
       flex-direction: column;
       gap: 0.8rem;
     }

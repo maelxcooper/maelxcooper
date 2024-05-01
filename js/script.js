@@ -68,11 +68,4 @@ dark.onclick = function() {
 // });
 
 
-/* For Animation */
-document.addEventListener("DOMContentLoaded", function() {
-    let anim = document.querySelectorAll(".anim");
-    anim.forEach(function(animate) {
-        animate.classList.add("animate__animated");
-    });
-});
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
 
@@ -8,10 +9,10 @@
 
     /* Font */
     --Font: 'Montserrat', sans-serif;
+    --sec-Font: 'Roboto', sans-serif;
 
-    /* Animation */
-      --animate-duration: 800ms;
-      --animate-delay: 0.9s;
+/* Transition */
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
 * {
@@ -21,7 +22,6 @@
 }
  
 h2 {
-  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -33,9 +33,27 @@ small {
   font-size: smaller;
 }
 
-/* section {
+img {
+  max-width: 100%;
+}
+
+p {
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    line-height: 30px;
+    font-family: var(--sec-Font);
+}
+
+
+section {
   padding: 100px 0;
-} */
+  max-width: 1000px;
+  margin: 0 auto;
+}
 body {
  font-family: var(--Font);
  width: 100vw;
@@ -45,7 +63,7 @@ body {
  
 }
 
-.wrapper {
+main {
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
@@ -53,6 +71,11 @@ body {
     padding: 0 120px;
 }
 
+.sc_heading {
+  font-weight: 600;
+  font-size: clamp(26px,5vw,38px);
+  margin: 10px 0 40px;
+}
 /* For Cursor */
 .cursor-outline {
   position: absolute;
@@ -324,10 +347,11 @@ header {
 /* End of Dark Mode Switch */
 
 /* Hero */
-.hero-body {
-min-height: 100vh;
+.hero_body {
+min-height: 80vh;
+padding: 0px;
 }
-.hero-info { 
+.hero_info { 
     text-align: center;
     position: relative;
     display: flex;
@@ -338,36 +362,36 @@ min-height: 100vh;
     min-height: 70vh;
 }
 
-.hero-info  .h-nm, .p-if {
+.hero_info  .h_nm, .p_if {
   margin: 0 auto;
 }
 
-.hero-info h2 {
+.hero_info h2 {
   text-align: center;
   font-size: clamp(28px, 8vw, 60px);
 }
-.hero-info small {
+.hero_info small {
   display: block;
   font-size: inherit;
   color: var(--mainColor);     
 }
-.hero-info small .lp-tp{
+.hero_info small .lp-tp{
   width: 40px;
 }
-.hero-info p {
+.hero_info p {
   margin-top: 16px;
 }
 
 
 
-.btn-con {
+.btn_con {
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin: 30px auto 0;
   flex-wrap: wrap;
 }
-.btn-con a {
+.btn_con a {
   color: var(--secColor);
   padding: 12px;
   border-radius: 6px;
@@ -383,7 +407,7 @@ min-height: 100vh;
 }
 
 
-.btn-con a::before {
+.btn_con a::before {
   background: var(--mainColor);
   content: "";
   position: absolute;
@@ -394,7 +418,7 @@ min-height: 100vh;
   transition: all 0.6s ease;
 }
 
-.btn-con a:hover {
+.btn_con a:hover {
   color: #fff;
   transition: .2s all ease;
   /* box-shadow: rgba(0, 186, 124, 0.35) 0px 5px 15px; */
@@ -411,6 +435,53 @@ transform: translate(-50%,-50%) rotate(-45deg);
 
 
 /* End  of Hero */
+
+
+/* About Section */
+.abt_sec {
+  min-height: 70vh;
+}
+.abt_sec h2 {
+}
+
+.abt_if {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 2rem;
+}
+
+.if_pic {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.if_pic figure img {
+  --s: 20px;  
+  --b: 1px;   
+  --w: 300px;
+ 
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2*var(--s));
+  --_g: var(--mainColor) var(--b),#0000 0 calc(100% - var(--b)),var(--mainColor) 0;
+  background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+  outline: calc(var(--w)/2) solid #0009;
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
+}
+
+.if_pic figure img:hover {
+  outline: var(--b) solid var(--mainColor);
+  outline-offset: calc(var(--s)/-2);
+  --_i: calc(100% - 2*var(--s));
+  transform: scale(1.1);
+}
+/* End of About */
 
 /* For Loading Screen Keyframes */
 @keyframes glitch {
