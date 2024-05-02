@@ -7,13 +7,17 @@
     /* --mainColor: #00BA7C; */
     --mainColor: #00BA7C;
     --secColor: #1b1b1b;
+    --rn-color: rgb(100, 116, 139, 1);
 
     /* Font */
     --Font: 'Montserrat', sans-serif;
     --sec-Font: 'Roboto', sans-serif;
 
     /* Font Size */
-    --fz-s: 14px;
+    --fz-xxs: 13px;
+    --fz-xs: 14px;
+    --fz-s: 16px;
+    --fz-m: 18px;
     --fz-l: 20px;
     --fz-xl: 24px;
     --fz-xxl: 28px;
@@ -59,6 +63,10 @@ ul {
   list-style-type: none;
 }
 
+.col2 {
+  column-count: 2;
+}
+
 section {
   padding: 100px 0;
   max-width: 1000px;
@@ -76,7 +84,7 @@ body {
 
 .sc_heading {
   font-weight: 600;
-  font-size: clamp(26px,5vw,32px);
+  font-size: clamp(24px,5vw,32px);
   margin: 10px 0 40px;
   position: relative;
   display: flex;
@@ -95,10 +103,17 @@ body {
   margin-left: 20px;
 }
 
+.title_heading {
+  font-family: var(--sec-Font);
+  font-size: var(--fz-m);
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 2px;
+}
 
 .inline_link {
   position: relative;
-  color: #00ffaa;
+  color: var(--mainColor);
   
 
   &:after {
@@ -118,8 +133,25 @@ body {
 }
 
 .range {
-  font-size: var(--fz-s);
+  font-size: var(--fz-xxs);
   margin: 0 0 20px;
+  color: var(--rn-color);
+}
+
+
+.bullet li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 20px;
+    font-family: var(--sec-Font);
+}
+.bullet li:before {
+  content: '▹';
+  position: absolute;
+  left: -6px;
+  top: -4px;
+  color: var(--mainColor);
+  font-size: 20px;
 }
 
 main {
@@ -486,7 +518,7 @@ transform: translate(-50%,-50%) rotate(-45deg);
   content: '▹';
   position: absolute;
   left: 0;
-  top: 4px;
+  top: 2px;
   color: var(--mainColor);
   font-size: 20px;
 }
@@ -500,17 +532,25 @@ transform: translate(-50%,-50%) rotate(-45deg);
 color: #fff;
 }
 /* End of About */
-.xp_hld h3 {
-  font-size: var(--fz-l);
-  font-weight: 500;
-  line-height: 1.3;
-  margin-bottom: 2px;
-}
 
 /* Experience */
+.exp_sec {
+  min-height: 70vh;
+}
+
+.xp_hld {
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+}
+
+
 
 
 /* End of Experience */
+
+
+
 /* For Loading Screen Keyframes */
 @keyframes glitch {
   0% {
