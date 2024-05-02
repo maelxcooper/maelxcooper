@@ -28,7 +28,10 @@
 .sidebar-socials {
   display: none;
 }
-/* End Sidebar*/
+
+
+/* Experience */
+.sc_heading::after { width: 100%;}
 }
 @media (max-width: 600px) {
 
@@ -61,10 +64,10 @@
     margin: 0;
   }
 
-/* End of About */
+
 
 /* Experience */
 
 
-/* End of Experience */
+
   }
