@@ -1,5 +1,5 @@
 /* Media Queries */
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
 
   /* About Section */
   .abt_if {
@@ -11,7 +11,14 @@
     text-align: center;
 }
 
-  /* End of About Section */
+/* Work */
+.project_bx {
+  display: block;
+}
+.project_img {
+  max-width: 100%;
+  margin: 40px auto 0;
+}
 
 }
 
