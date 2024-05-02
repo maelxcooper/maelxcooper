@@ -73,6 +73,7 @@ html.bgdark .cursor-expand {background: var( --clr-mn-pri);}
 .lg-acc-d{background-color:var(--clr-ac-d); transition: background-color 0.5s;}
 
 html.bgdark .fg-mono{color:var(--clr-fg);}
+html.bgdark .wp {fill:var(--clr-fg);}
 .fg-mono-d{color:var(--clr-fg-d);}
 .fg{color:var(--clr-dark);}
 .fg-pri, .fgi-pri{color:var(--clr-pr-fg);}
