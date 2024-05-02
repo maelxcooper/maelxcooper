@@ -565,7 +565,7 @@ color: #fff;
   grid-template-columns: 2fr 2fr;
   align-items: center;
 }
-.projec_img {
+.project_img {
   max-width: 700px;
   position: relative;
   overflow: hidden;
@@ -573,7 +573,7 @@ color: #fff;
   
 }
 
-.projec_img :hover .img_wrapper {
+.project_img :hover .img_wrapper {
     transform: scale(1.1);
     object-fit: contain;
   }
