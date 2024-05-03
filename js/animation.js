@@ -1,6 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Gsap Scrolltrigger
+
+
+gsap.from('html', {
+    opacity: 1,
+    delay: 0.2,
+})
+
 gsap.from('.logo h2', {
     opacity: 0,
     delay: 1.5,
