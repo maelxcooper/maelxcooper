@@ -148,6 +148,13 @@ body {
   font-size: var(--fz-xxs);
   margin: 0 0 20px;
   color: var(--rn-color);
+  border-bottom: 1px solid;
+}
+
+.i-f {
+  font-size: var(--fz-xxs);
+  margin: 0 0 20px;
+  color: var(--rn-color);
 }
 
 
@@ -249,6 +256,8 @@ header {
     margin: 20px 0;
     padding: 0 50px;
     width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 .hdr-con .logo h2 {
@@ -369,7 +378,7 @@ header {
 
 /* Hero */
 .hero_body {
-min-height: 80vh;
+min-height: 90vh;
 padding: 0px;
 }
 .hero_info { 
@@ -501,6 +510,7 @@ transform: translate(-50%,-50%) rotate(-45deg);
   outline-offset: calc(var(--w)/-2 - 2*var(--s));
   transition: .4s;
   cursor: pointer;
+
 }
 
 .if_pic figure img:hover {
@@ -556,6 +566,9 @@ color: #fff;
 
 .wrk-if {
   padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
 }
 
 
@@ -565,18 +578,25 @@ color: #fff;
   grid-template-columns: 2fr 2fr;
   align-items: center;
 }
+
+.project_content:nth-child(odd) .project_img {
+  animation: float 3s ease-in-out infinite;
+}
 .project_img {
   max-width: 700px;
   position: relative;
   overflow: hidden;
   border-radius: 4px;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px var(--mainColor));
   
 }
 
-.project_img :hover .img_wrapper {
-    transform: scale(1.1);
-    object-fit: contain;
-  }
+.project_img:hover {
+  filter: drop-shadow(0 0 10px #fff);
+}
+
+
 
 .img_wrapper {
   transition: all 0.2s ease-in-out;
@@ -594,64 +614,16 @@ color: #fff;
 
 
 /* For Loading Screen Keyframes */
-@keyframes glitch {
-  0% {
-    transform: translate(0);
+@keyframes float {
+  0%{
+    transform: translateY(0);
   }
-
-  20% {
-    transform: translate(-3px, 3px);
-  }
-
-  40% {
-    transform: translate(-3px, -3px);
-  }
-
-  60% {
-    transform: translate(3px, 3px);
-  }
-
-  80% {
-    transform: translate(3px, -3px);
-  }
-
-  to {
-    transform: translate(0);
-  }
-}
-
-@keyframes shift {
-  0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
-    transform: skewX(0deg);
-  }
-
-  41% {
-    transform: skewX(10deg);
-  }
-
-  42% {
-    transform: skewX(-10deg);
-  }
-
-  59% {
-    transform: skewX(40deg) skewY(10deg);
-  }
-
-  60% {
-    transform: skewX(-40deg) skewY(-10deg);
-  }
-
-  63% {
-    transform: skewX(10deg) skewY(-5deg);
-  }
-
-  70% {
-    transform: skewX(-50deg) skewY(-20deg);
-  }
-
-  71% {
-    transform: skewX(10deg) skewY(-10deg);
-  }
+  50%{
+    transform: translateY(-10px);
+  } 
+  100%{
+    transform: translateY(0px);
+  } 
 }
 
 /* For wavew keyframes */
