@@ -182,7 +182,6 @@ main {
 }
 
 /* Loader */
-/* Loader */
 #loader-holder {
   width: 100%;
   height: 100%;
@@ -308,8 +307,6 @@ header {
     color: var(--mainColor);
     font-size: 40px;
 }
-
-
 
 /* wave background */
 .box {
@@ -625,27 +622,25 @@ color: #fff;
   align-items: center;
 }
 
-.project_content:nth-child(odd) .project_img {
-  animation: float 3s ease-in-out infinite;
-}
+
 .project_img {
   max-width: 700px;
   position: relative;
   overflow: hidden;
   border-radius: 4px;
-  animation: float 4s ease-in-out infinite;
   filter: drop-shadow(0 0 6px var(--mainColor));
-  
 }
 
 .project_img:hover {
-  filter: drop-shadow(0 0 10px #fff);
+  filter: drop-shadow(0 0 10px var(--secColor));
 }
 
-
+.project_content:nth-child(odd) .project_img .img_wrapper {
+  animation: float 3s ease-in-out infinite;
+}
 
 .img_wrapper {
-  transition: all 0.2s ease-in-out;
+  animation: float 4s ease-in-out infinite;
 }
 
 .project-desc {
@@ -658,7 +653,8 @@ color: #fff;
 /* End of Experience */
 
 
-/* For Loading Screen Keyframes */
+
+/* Loading Screen */
 @keyframes loading {
   0% {
     width: 0%;
@@ -681,9 +677,22 @@ color: #fff;
   }
 }
 
-/* End of Loader Keyframes */
+/* End of Loader */
 
-/* For wavew keyframes */
+/* Floating Images */
+@keyframes float {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  } 
+  100%{
+    transform: translateY(0px);
+  } 
+}
+
+/* For wave keyframes */
 @keyframes rotate {
   from {transform: rotate(0deg);}
   from {transform: rotate(360deg);}

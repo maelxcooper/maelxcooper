@@ -1,5 +1,5 @@
 html{
-    --clr-bg: #fff;
+    --clr-bg: #fffceb;
     --clr-bg-d: #f3f4f6;
     --clr-fg: #333;
     --clr-fg-d: #000;
@@ -62,6 +62,7 @@ html.bgdark .sidebar-socials ul::after { background: var(--clr-gh);}
 
 html.bgdark .cursor-outline {background: var(--clr-fg); opacity: 0.8;}
 html.bgdark .cursor-expand {background: var( --clr-mn-pri);}
+html.bgdark .project_img:hover {filter: drop-shadow(0 0 10px var(--clr-fg));}
 
 .lg-mono{background-color:var(--clr-bg); transition: background-color 0.5s;}
 .lg-mono-d{background-color:var(--clr-bg-d); transition: background-color 0.5s;}

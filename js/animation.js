@@ -1,18 +1,15 @@
-gsap.registerPlugin(ScrollTrigger);
-
 // Gsap Scrolltrigger
-
-
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.from('.logo h2', {
     opacity: 0,
-    delay: 3,
+    delay: 4,
     y:-20
 })
 gsap.from('.container', {
     opacity: 0,
     rotation: 400,
-    delay: 3,
+    delay: 4,
     y:-20
 })
 
@@ -67,10 +64,22 @@ gsap.from('.btn_con', {
     opacity: 0,
     delay: 3.5,
     y:20
-    
 })
 
-
+gsap.utils.toArray('li').forEach(li=>{
+    gsap.fromTo(li,{
+        opacity: 0,
+        x: 150,
+        skewX: 30
+    },{
+        opacity: 1,
+        x: 0,
+        skewX: 0,
+        duration: 1,
+        delay: .5,
+        scrollTrigger: li
+    })
+})
 
 
 gsap.from(".abt_sec", {
@@ -80,6 +89,14 @@ gsap.from(".abt_sec", {
     duration: 2,
 })
 
+
+gsap.from('.project_img' ,{
+    scrollTrigger: '.wrk-if',
+    opacity: 0,
+    scale: .5,
+    duration: 1,
+    delay: 1
+})
 
 
 
