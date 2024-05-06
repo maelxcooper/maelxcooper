@@ -528,8 +528,6 @@ transform: translate(-50%,-50%) rotate(-45deg);
 .abt_sec {
   min-height: 80vh;
 }
-.abt_sec h2 {
-}
 
 .abt_if {
   display: grid;
