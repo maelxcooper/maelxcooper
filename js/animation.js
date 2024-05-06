@@ -89,6 +89,14 @@ gsap.from(".abt_sec", {
     duration: 1.5,
 })
 
+gsap.from('.if_pic' ,{
+    scrollTrigger: '.abt_sec',
+    opacity: 0,
+    scale: .5,
+    duration: 1,
+    delay: 1
+})
+
 
 gsap.from(".exp_sec", {
     scrollTrigger: ".prwvr", // start the animation when ".box" enters the viewport (once)
