@@ -450,6 +450,7 @@ padding: 0px;
   font-weight: normal;
   font-family: var(--sec-Font);
   margin-bottom: 14px;
+  color: var(--mainColor);
 }
 
 .h_nm h2 {

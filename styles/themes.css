@@ -18,6 +18,7 @@ html{
     --clr-sc-fgd: #115e59;
     --clr-ac-fg: #b45309;
     --clr-ac-fgd: #b45309;
+    --clr-mn-pri: #00BA7C;
 
 }
 
@@ -43,7 +44,7 @@ html.bgdark{
     --clr-ac-fgd: #6a2a08;
 
 
-    --clr-mn-pri: #00BA7C;
+    --clr-sm-pri: #00BA7C;
     --clr-cursor-pri: #000000;
 
 }
@@ -83,6 +84,7 @@ html.bgdark .wp {fill:var(--clr-fg);}
 .fg-sec-d, .fgi-sec-d{color:var(--clr-sc-fgd);}
 .fg-acc, .fgi-acc{color:var(--clr-ac-fg);}
 .fg-acc-d, .fgi-acc-d{color:var(--clr-ac-fgd);}
+.mn-pri {color: var(--clr-sm-pri);}
 
 
 
