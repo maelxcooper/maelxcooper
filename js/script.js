@@ -12,5 +12,5 @@ function hideLoader () {
     document.getElementById('loader-holder').classList.add('hide-loader')
   }
   window.onload = function(){
-    setTimeout(hideLoader, 1890)
+    setTimeout(hideLoader, 1800)
   }
