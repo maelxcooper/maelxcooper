@@ -658,7 +658,7 @@ color: #fff;
 
 
 /* Loading Screen */
-@keyframes loading {
+/* @keyframes loading {
   0% {
     width: 0%;
   }
@@ -678,7 +678,7 @@ color: #fff;
   100% {
     width: 100%;
   }
-}
+} */
 
 /* End of Loader */
 
