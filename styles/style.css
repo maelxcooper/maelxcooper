@@ -35,12 +35,22 @@
  
 }
  html {
-  width: 100%;
   scroll-behavior: smooth;
  }
 h2 {
   font-weight: bold;
 }
+
+
+body {
+  font-family: var(--Font);
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: background-color 0.3s ease;
+ 
+ }
 
 a {
   text-decoration: none;
@@ -67,6 +77,7 @@ p {
 
 ul {
   list-style-type: none;
+  overflow-x: hidden;
 }
 
 .col2 {
@@ -80,14 +91,6 @@ section {
 }
 
 
-body {
- font-family: var(--Font);
- width: 100%;
- min-height: 100%;
- overflow-x: hidden;
- transition: background-color 0.3s ease;
-
-}
 
 .sc_heading {
   font-weight: 600;
@@ -658,7 +661,7 @@ color: #fff;
 
 
 /* Loading Screen */
-/* @keyframes loading {
+@keyframes loading {
   0% {
     width: 0%;
   }
@@ -678,7 +681,7 @@ color: #fff;
   100% {
     width: 100%;
   }
-} */
+}
 
 /* End of Loader */
 

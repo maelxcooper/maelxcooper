@@ -1,7 +1,5 @@
-/* Media Queries */
 @media only screen and (max-width: 1000px) {
 
-  /* About Section */
   .abt_if {
     display: block;
   }
@@ -11,7 +9,6 @@
     text-align: center;
 }
 
-/* Work */
 .project_bx {
   display: block;
 }
@@ -22,34 +19,30 @@
 
 }
 
-  @media only screen and (max-width: 800px) {
-
-    
-  }
 @media only screen and (max-width: 768px){
   main {
     padding: 0 60px;
-  }
+  }  
 
-/* Sidebar */
+
 .sidebar-socials {
   display: none;
 }
 
 
-/* Experience */
+
 .sc_heading::after { width: 100%;}
 }
 @media only screen and (max-width: 600px) {
 
-/* Others */
+
 .col2 {
   column-count: 1;
 }
     main {
       padding: 0 20px;
     }
-  /* Header */
+
     .hdr-con {
       padding: 0 20px;
     }
@@ -66,14 +59,14 @@
       gap: 0.8rem;
     }
 
-/* About */
+
  .if_txt .skilled-list {
     margin: 0;
   }
 
 
 
-/* Experience */
+
 
 
 
