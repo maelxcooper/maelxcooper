@@ -83,10 +83,25 @@ gsap.utils.toArray('li').forEach(li=>{
 
 
 gsap.from(".abt_sec", {
-    scrollTrigger: ".if_txt", // start the animation when ".box" enters the viewport (once)
+    scrollTrigger: ".skilled-list", // start the animation when ".box" enters the viewport (once)
     opacity: 0,
-    x: -400,
-    duration: 2,
+    y: 20,
+    duration: 1.5,
+})
+
+
+gsap.from(".exp_sec", {
+    scrollTrigger: ".prwvr", // start the animation when ".box" enters the viewport (once)
+    opacity: 0,
+    y: 20,
+    duration: 1.5,
+})
+
+gsap.from(".work_sec", {
+    scrollTrigger: ".project_content", // start the animation when ".box" enters the viewport (once)
+    opacity: 0,
+    y: 20,
+    duration: 1.5,
 })
 
 
