@@ -64,10 +64,13 @@
     margin: 0;
   }
 
-
-
-
-
-
-
   }
+
+  @media only screen and (max-width: 400px) {
+    .if_txt .skilled-list li{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+  }
+}

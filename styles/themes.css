@@ -45,6 +45,7 @@ html.bgdark{
 
 
     --clr-sm-pri: #00BA7C;
+    --clr-sec-pri: #ccd6f6;
     --clr-cursor-pri: #000000;
 
 }
@@ -59,6 +60,7 @@ html.bgdark .fgi-acc-d{color:var(--clr-ac-d);}
 html.bgdark .wv-pri { background: var(--clr-fg);}
 html.bgdark .gh { color: var(--clr-gh); }
 html.bgdark .sidebar-socials ul::after { background: var(--clr-gh);}
+html.bgdark .sec_pri { color: var(--clr-sec-pri);}
 
 
 html.bgdark .cursor-outline {background: var(--clr-fg); opacity: 0.8;}

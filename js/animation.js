@@ -3,31 +3,31 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from('.logo h2', {
     opacity: 0,
-    delay: 4,
+    delay: 3,
     y:-20
 })
 gsap.from('.container', {
     opacity: 0,
     rotation: 400,
-    delay: 4,
+    delay: 3,
     y:-20
 })
 
 gsap.from('.box', {
     opacity: 0,
-    delay: 4.5,
+    delay: 3.5,
     x:-20
 })
 
 gsap.from('.box2', {
     opacity: 0,
-    delay: 4.5,
+    delay: 3.5,
     x:20
 })
 
 gsap.from('.sidebar-socials', {
     opacity: 0,
-    delay: 4,
+    delay: 3,
     y:20
 })
 
@@ -37,7 +37,7 @@ gsap.from(name_letters.children ,{
     opacity: 0,
     x: 0,
     duration: 1,
-    delay: 4,
+    delay: 4.5,
     stagger: {
         amount: 1
     }
@@ -45,18 +45,18 @@ gsap.from(name_letters.children ,{
 
 gsap.from('.hero_body .sml-nm', {
     opacity: 0,
-    delay: 3.5,
+    delay: 4,
     y:20
 })
 gsap.from('.hero_body h2', {
     opacity: 0,
-    delay: 3.5,
+    delay: 4,
     y:20
 })
 
 gsap.from('.hero_body p', {
     opacity: 0,
-    delay: 3.5,
+    delay: 4,
     x:20
 })
 
@@ -110,6 +110,13 @@ gsap.from(".work_sec", {
     opacity: 0,
     y: 20,
     duration: 1.5,
+})
+
+gsap.from(".contact", {
+    scrollTrigger: ".con_title", // start the animation when ".box" enters the viewport (once)
+    opacity: 0,
+    y: 20,
+    duration: 2,
 })
 
 
