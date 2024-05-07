@@ -19,13 +19,18 @@ window.onload = function() {
 
 
 // Swapping
-const windowWidth = window.innerWidth;
-const socMed = document.querySelector('.sidebar-socials');
-const secCon = document.querySelector('.contact');
-const box = document.querySelector('.box');
+function performSwapping() {
+  const windowWidth = window.innerWidth;
+  const socMed = document.querySelector('.sidebar-socials');
+  const secCon = document.querySelector('.contact');
+  const box = document.querySelector('.box');
 
-if (windowWidth <= 768) {
-  secCon.insertAdjacentElement('afterend', socMed);
-} else {
-  box.insertAdjacentElement('beforebegin', socMed);
+  if (windowWidth <= 768) {
+      secCon.insertAdjacentElement('afterend', socMed);
+  } else {
+      box.insertAdjacentElement('beforebegin', socMed);
+  }
 }
+
+document.addEventListener('DOMContentLoaded', performSwapping);
+window.addEventListener('resize', performSwapping);
