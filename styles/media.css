@@ -26,7 +26,21 @@
 
 
 .sidebar-socials {
-  display: none;
+  position: static;
+  width: 100%;
+  margin-top: 40px;
+
+    ul {
+      flex-direction: row;
+      justify-content: center;
+      gap: 4em;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    
 }
 
 
@@ -45,9 +59,6 @@
 
     .hdr-con {
       padding: 0 20px;
-    }
-    .sidebar-socials {
-      display: none;
     }
     .box, .box2 {
       display: none;
