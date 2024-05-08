@@ -341,6 +341,7 @@ header {
   background: var(--mainColor);
 }
 
+
 .wave.-two {
   animation: rotate 6000ms infinite linear;
   opacity: 8%;
