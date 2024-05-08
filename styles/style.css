@@ -462,9 +462,21 @@ padding: 0px;
 }
 .hero_info small {
   display: block;
-  font-size: inherit;
+  font-size: clamp(28px, 6vw, 60px);
   color: var(--mainColor);     
 }
+
+.hero-nm span {
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+
+.bounce {
+  animation-name: bounce;
+}
+
 .hero_info small .lp-tp{
   width: 40px;
 }
@@ -745,5 +757,22 @@ color: #fff;
 @keyframes rotate {
   from {transform: rotate(0deg);}
   from {transform: rotate(360deg);}
+}
+
+
+/* Bouncing Letters */
+@keyframes bounce {
+  20%, 50%, 80%, to{
+      transform: scale(1,1);
+  }
+  40%, 45%{
+      transform: scale(1.75, 0.65);
+  }
+  60%{
+      transform: scale(1.25, 0.75);
+  }
+  90% {
+      transform: scale(1.15, 0.85);
+  }
 }
 
