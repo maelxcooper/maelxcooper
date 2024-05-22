@@ -602,6 +602,11 @@ header {
   height: 30px;
 }
 
+.sass img {
+  width: 35px !important;
+  height: 35px !important;
+}
+
 .jq img {
   color: #fff;
 }
