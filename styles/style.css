@@ -7,9 +7,11 @@
   --mainColor: #00ba7c;
   --secColor: #1b1b1b;
   --rn-color: rgb(100, 116, 139, 1);
+  --rnx-color: rgb(100, 116, 139);
   --light-slate: #a8b2d1;
   --lightest-slate: #ccd6f6;
   --p-clr: rgb(21, 32, 43, 0.6);
+  --px-clr: rgb(21, 32, 43);
 
   /* Font */
   --Font: "Montserrat", sans-serif;
@@ -35,7 +37,11 @@
 }
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--rnx-color) var(--px-clr);
 }
+
+
 h2 {
   font-weight: bold;
 }
