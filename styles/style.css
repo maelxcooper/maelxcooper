@@ -37,10 +37,10 @@
 }
 html {
   scroll-behavior: smooth;
-
+  scrollbar-width: none;
 }
 
-html.after-load {
+html.al {
   scrollbar-width: thin;
   scrollbar-color: var(--rnx-color) var(--px-clr);
 }

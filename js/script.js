@@ -21,10 +21,13 @@ dark.onclick = function () {
 
 const hideLoader = document.getElementById('loader-holder');
 
+window.onload = () => {
+  setTimeout(() => {
+    hideLoader.style.display = 'none';
 
-window.onload = function () {
-  setTimeout(function() {
-    hideLoader.style.display = 'none'; 
+    if (window.getComputedStyle(hideLoader).display === 'none') {
+      document.documentElement.classList.add('al');
+    }
   }, 1800);
 };
 
