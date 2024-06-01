@@ -25,11 +25,13 @@ window.onload = () => {
   setTimeout(() => {
     hideLoader.style.display = 'none';
 
-    if (window.getComputedStyle(hideLoader).display === 'none') {
-      document.documentElement.classList.add('al');
-    }
-  }, 1800);
-};
+    if (window.getComputedStyle(hideLoader).display === 'none')
+      {
+        document.documentElement.classList.add('al');
+      }
+  }, 1800)
+}
+
 
 // Swapping
 function performSwapping() {
