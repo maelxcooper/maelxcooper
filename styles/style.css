@@ -37,6 +37,10 @@
 }
 html {
   scroll-behavior: smooth;
+
+}
+
+html.after-load {
   scrollbar-width: thin;
   scrollbar-color: var(--rnx-color) var(--px-clr);
 }
@@ -54,6 +58,8 @@ body {
   overflow-y: auto;
   transition: background-color 0.3s ease;
 }
+
+
 
 a {
   text-decoration: none;
@@ -227,9 +233,6 @@ main {
   background: var(--mainColor);
   transition: 0.5s;
   animation: loading 2s ease infinite;
-}
-.hide-loader {
-  display: none !important;
 }
 
 /* End of Loader */

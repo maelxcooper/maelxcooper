@@ -5,16 +5,27 @@ dark.onclick = function () {
 };
 
 // Loader
-function hideLoader() {
-  document.getElementById("loader-holder").classList.add("hide-loader");
-  // Scroll to top when the page loads
-  requestAnimationFrame(function () {
-    window.scrollTo(0, 0);
-  });
-}
+// function hideLoader() {
+//   document.getElementById("loader-holder").classList.add("hide-loader");
+//   requestAnimationFrame(function () {
+//     window.scrollTo(0, 0);
+//   });
+// }
+
+
+// const hideLoader = document.getElementById('#loader-holder');
+
+// window.onload = function () {
+//   setTimeout(hideLoader, 1800);
+// };
+
+const hideLoader = document.getElementById('loader-holder');
+
 
 window.onload = function () {
-  setTimeout(hideLoader, 1800);
+  setTimeout(function() {
+    hideLoader.style.display = 'none'; 
+  }, 1800);
 };
 
 // Swapping
