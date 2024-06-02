@@ -6,7 +6,7 @@ Hey there! I'm Prince Caballes 👋, an entry-level Front-End Developer with a p
 
 
 
-Temporary Portfolio: https://princecaballes.netlify.app/
+Temporary Portfolio: https://princecaballes.netlify.app/ - This temporary portfolio has been built from scratch using HTML, CSS, and JavaScript. It is designed to showcase my web development skills and demonstrate my solid understanding of fundamental concepts. The content and design elements reflect my proficiency and commitment to continuous learning and growth in the field.
 
 
 ### Contacts
