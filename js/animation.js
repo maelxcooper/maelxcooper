@@ -1,6 +1,9 @@
 // Gsap Scrolltrigger
 gsap.registerPlugin(ScrollTrigger);
 
+let animationsInitialized = false;
+
+function initializeAnimations() {
 gsap.from('.logo h2', {
     opacity: 0,
     delay: 3,
@@ -127,6 +130,26 @@ gsap.from('.project_img' ,{
     duration: 1,
     delay: 1
 })
+
+}
+
+
+
+function handleResize() {
+    if (window.innerWidth > 1000 && !animationsInitialized) {
+        initializeAnimations();
+        animationsInitialized = true;
+    } else if (window.innerWidth <= 1000 && animationsInitialized) {
+        ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        animationsInitialized = false;
+    }
+}
+
+// Call handleResize initially
+handleResize();
+
+// Add event listener for window resize
+$(window).on('resize', handleResize);
 
 
 
