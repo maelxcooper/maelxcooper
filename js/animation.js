@@ -148,8 +148,8 @@ function handleResize() {
 // Call handleResize initially
 handleResize();
 
-// Add event listener for window resize
-$(window).on('resize', handleResize);
+
+
 
 
 
