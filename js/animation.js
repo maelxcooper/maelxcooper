@@ -153,6 +153,3 @@ handleResize();
 
 
 
-
-
-
