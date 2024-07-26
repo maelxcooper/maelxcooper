@@ -43,6 +43,7 @@ html {
 html.al {
   scrollbar-width: thin;
   scrollbar-color: var(--rnx-color) var(--px-clr);
+  overflow-x: hidden;
 }
 
 
