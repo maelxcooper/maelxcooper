@@ -262,9 +262,14 @@ main {
 .sidebar-socials .mr-5 {
   margin-bottom: 1.25rem;
   transition: 0.2s ease;
+  position: relative;
 }
 .sidebar-socials .mr-5:hover {
   transform: scale(1.1);
+}
+
+.sidebar-socials .mr-5:hover .social-name {
+  transform: translate(30%, -10%) scale(1);
 }
 
 .sidebar-socials .mr-5:hover svg {
@@ -299,6 +304,29 @@ main {
 .h-5 {
   height: 1.25rem;
 }
+
+
+.social-name {
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-4%) scale(0);
+  transform-origin: left;
+  z-index: 20;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  white-space: nowrap;
+  color: var(--secColor);
+}
+
+
+
 
 header {
   width: 100%;
