@@ -315,14 +315,14 @@ main {
   z-index: 20;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  border: 1px solid #d1d5db;
-  background-color: white;
+  border: 1px solid var(--mainColor);
+  background: var(--mainColor);
   font-size: 0.875rem;
   font-weight: bold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   white-space: nowrap;
-  color: var(--secColor);
+  color: #fff;
 }
 
 

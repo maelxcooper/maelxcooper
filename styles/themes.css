@@ -50,6 +50,8 @@ html.bgdark{
 
 }
 
+html.bgdark .social-name { background: var(--clr-fg); border: 1px solid #d1d5db; color: var(--clr-bg-d);}
+
 html.bgdark .mn-pri { color: var(--clr-mn-pri)}
 html.bgdark .fgi-pri{color:var(--clr-pr);}
 html.bgdark .fgi-pri-d{color:var(--clr-pr-d);}
