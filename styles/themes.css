@@ -47,7 +47,8 @@ html.bgdark{
     --clr-sm-pri: #00BA7C;
     --clr-sec-pri: #ccd6f6;
     --clr-cursor-pri: #000000;
-
+    
+    overflow-x: hidden;
 }
 
 

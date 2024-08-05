@@ -20,9 +20,16 @@
 }
 
 @media only screen and (max-width: 768px){
+  
+  .box, .box2 {
+    display: none;
+  }
+  
   main {
     padding: 0 60px;
   }  
+
+  
 
 
 .sidebar-socials {
@@ -66,9 +73,6 @@
 
     .hdr-con {
       padding: 0 20px;
-    }
-    .box, .box2 {
-      display: none;
     }
 
 

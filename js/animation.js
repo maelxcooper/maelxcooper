@@ -125,19 +125,21 @@ function initializeAnimations() {
     });
 }
 
-function handleResize() {
-    if ($(window).width() > 1000 && !animationsInitialized) {
-        initializeAnimations();
-        animationsInitialized = true;
-    } else if ($(window).width() <= 1000 && animationsInitialized) {
-        // Remove all ScrollTrigger animations when window width is 1000px or below
-        ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-        animationsInitialized = false;
-    }
-}
+initializeAnimations();
 
-// Call handleResize initially
-handleResize();
+// function handleResize() {
+//     if ($(window).width() >= 1000 && !animationsInitialized) {
+//         initializeAnimations();
+//         animationsInitialized = true;
+//     } else if ($(window).width() <= 1000 && animationsInitialized) {
+//         // Remove all ScrollTrigger animations when window width is 1000px or below
+//         ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+//         animationsInitialized = false;
+//     }
+// }
 
-// Add event listener for window resize
-$(window).on('resize', handleResize);
+// // Call handleResize initially
+// handleResize();
+
+// // Add event listener for window resize
+// $(window).on('resize', handleResize);
