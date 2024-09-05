@@ -40,17 +40,16 @@
   bottom: unset;
   right: unset;
 
-    ul {
-      flex-direction: row;
-      justify-content: center;
-      gap: 4em;
+}
 
-      &::after {
-        display: none;
-      }
-    }
+.sidebar-socials ul {
+  flex-direction: row;
+  justify-content: center;
+  gap: 4em;
+}
 
-    
+.sidebar-socials ul:after {
+  display: none;
 }
 
 

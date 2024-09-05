@@ -269,7 +269,6 @@ main {
 }
 
 
-
 .sidebar-socials .mr-5:hover svg {
   color: var(--mainColor);
   filter: drop-shadow(0 1px 2px rgba(0, 186, 124));
