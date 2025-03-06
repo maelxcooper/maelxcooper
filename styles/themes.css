@@ -23,7 +23,8 @@ html{
 }
 
 html.bgdark{
-    --clr-bg: rgb(21,32,43, 1);
+    /* --clr-bg: rgb(21,32,43, 1); */
+    --clr-bg: #0a192f;
     --clr-bg-d: #060b20;
     --clr-fg: #fff;
     --clr-fg-d: #f3f4f6;
