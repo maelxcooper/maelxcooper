@@ -67,6 +67,7 @@ bounceLetter.forEach((span) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const mouseEffect = document.getElementById("mouse-effect");
+  const htmlElement = document.documentElement;
 
   const handleMousemove = (e) => {
     const { clientX: x, clientY: y } = e;
@@ -76,16 +77,22 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   };
 
-  const updateEventListener = () => {
-    if ( window.innerWidth >= 1000) {
+
+
+  const updateMouseEffect = () => {
+    if ( window.innerWidth >= 1000 && htmlElement.classList.contains('bgdark')) {
+      mouseEffect.style.display = 'block';
       document.addEventListener("mousemove", handleMousemove);
     } else {
+        mouseEffect.style.display = 'none';
       document.removeEventListener("mousemove", handleMousemove);
     }
   };
 
-  updateEventListener();
+  updateMouseEffect();
 
-  window.addEventListener("resize", updateEventListener);
+  window.addEventListener("resize", updateMouseEffect);
+  const observer = new MutationObserver(updateMouseEffect);
+  observer.observe(htmlElement, { attributes: true, attributeFilter: ["class"] });
 });
 
