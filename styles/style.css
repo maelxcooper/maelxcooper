@@ -782,3 +782,16 @@ header {
     transform: scale(1.15, 0.85);
   }
 }
+
+
+/* Mouse Effect */
+#mouse-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; 
+  z-index: -1;
+  transition: background 0.1s ease-out; 
+}

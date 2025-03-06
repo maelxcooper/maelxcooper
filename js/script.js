@@ -64,3 +64,28 @@ bounceLetter.forEach((span) => {
     );
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const mouseEffect = document.getElementById("mouse-effect");
+
+  const handleMousemove = (e) => {
+    const { clientX: x, clientY: y } = e;
+
+    mouseEffect.style.background = `
+      radial-gradient(600px at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)
+    `;
+  };
+
+  const updateEventListener = () => {
+    if ( window.innerWidth >= 1000) {
+      document.addEventListener("mousemove", handleMousemove);
+    } else {
+      document.removeEventListener("mousemove", handleMousemove);
+    }
+  };
+
+  updateEventListener();
+
+  window.addEventListener("resize", updateEventListener);
+});
+
