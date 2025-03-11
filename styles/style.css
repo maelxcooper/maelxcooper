@@ -515,6 +515,7 @@ header {
   display: block;
   border: 1px solid var(--mainColor);
   font-weight: 500;
+  font-family: var(--sec-Font);
 }
 
 .btn_con a::before {
