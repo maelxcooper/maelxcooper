@@ -478,11 +478,10 @@ header {
   animation-timing-function: linear;
   animation-iteration-count: 1;
   display: inline-block;
+  cursor: pointer;
 }
 
-.hero-nm span:hover {
-  cursor: default;
-}
+
 
 .bounce {
   animation-name: bounce;
