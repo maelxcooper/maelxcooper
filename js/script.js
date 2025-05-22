@@ -1,4 +1,4 @@
-$(document).ready(() => {
+$(document).ready(function()  {
   // Dark Mode Toggle
   const dark = document.querySelector(".input");
   dark.onclick = function () {
@@ -63,7 +63,7 @@ $(document).ready(() => {
     });
   });
 
-  document.addEventListener("DOMContentLoaded", () => {
+
     const mouseEffect = document.getElementById("mouse-effect");
     const htmlElement = document.documentElement;
 
@@ -96,7 +96,7 @@ $(document).ready(() => {
       attributes: true,
       attributeFilter: ["class"],
     });
-  });
+ 
 
   const links = document.querySelectorAll("a.inline_link, .soc_med a");
   links.forEach((link) => {
