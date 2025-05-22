@@ -1,5 +1,4 @@
 @media only screen and (max-width: 1000px) {
-
   .abt_if {
     display: block;
   }
@@ -7,91 +6,77 @@
   .if_pic {
     margin: 50px auto;
     text-align: center;
+  }
+
+  .project_bx {
+    display: block;
+  }
+  .project_img {
+    max-width: 100%;
+    margin: 40px auto 0;
+  }
 }
 
-.project_bx {
-  display: block;
-}
-.project_img {
-  max-width: 100%;
-  margin: 40px auto 0;
-}
-
-}
-
-@media only screen and (max-width: 768px){
-  
-  .box, .box2 {
+@media only screen and (max-width: 768px) {
+  .box,
+  .box2 {
     display: none;
   }
-  
+
   main {
     padding: 0 60px;
-  }  
+  }
 
-  
+  .sidebar-socials {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    left: unset;
+    bottom: unset;
+    right: unset;
+  }
 
+  .sidebar-socials ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4em;
+  }
 
-.sidebar-socials {
-  position: relative;
-  width: 100%;
-  margin-top: 40px;
-  left: unset;
-  bottom: unset;
-  right: unset;
+  .sidebar-socials ul:after {
+    display: none;
+  }
 
-}
-
-.sidebar-socials ul {
-  flex-direction: row;
-  justify-content: center;
-  gap: 4em;
-}
-
-.sidebar-socials ul:after {
-  display: none;
-}
-
-
-
-.sc_heading::after { 
-  width: 100%;
-}
-
- 
+  .sc_heading::after {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 600px) {
+  .col2 {
+    column-count: 1;
+  }
+  main {
+    padding: 0 20px;
+  }
 
+  .hdr-con {
+    padding: 0 20px;
+  }
 
-.col2 {
-  column-count: 1;
-}
-    main {
-      padding: 0 20px;
-    }
+  .btn_con {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
 
-    .hdr-con {
-      padding: 0 20px;
-    }
-
-
-    .btn_con {
-      flex-direction: column;
-      gap: 0.8rem;
-    }
-
-
- .if_txt .skilled-list {
+  .if_txt .skilled-list {
     margin: 0;
   }
+}
 
-  }
-
-  @media only screen and (max-width: 400px) {
-    .if_txt .skilled-list li{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding-left: 0;
+@media only screen and (max-width: 400px) {
+  .if_txt .skilled-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
   }
 }
